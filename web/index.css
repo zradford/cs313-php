@@ -1,0 +1,36 @@
+
+.homeWrapper {
+   display: grid;
+   column-gap: 10px;
+   row-gap: 10px;
+   grid-template-columns:repeat(5, 1fr);
+   grid-template-rows:repeat(5, 1fr);
+}
+
+.bigHello {
+   font-size: 10em;
+   grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 3;
+   background-color: blue;
+}
+
+.introduction{
+   font-size: 35px;
+   background-color: aqua;
+
+   grid-column-start: 3;
+   grid-column-end: 5;
+
+   grid-row-start: 2;
+   grid-row-end: 3;
+}
+.moreInfo {
+   background-color: lightcoral;
+
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 3;
+   grid-row-end: 5;
+}
