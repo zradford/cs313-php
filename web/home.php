@@ -7,7 +7,7 @@
    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
 </head>
 <body>
-    <?php require "header.php"?> 
+    <?php echo file_get_contents(“header.php”); ?> 
    <div class="homeWrapper">
       <div class="bigHello">
          Hello
