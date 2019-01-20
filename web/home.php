@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
    <title>Zac Radford</title>
@@ -7,7 +7,7 @@
    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
 </head>
 <body>
-    <?php include "header.php"?> 
+    <?php require "header.php"?> 
    <div class="homeWrapper">
       <div class="bigHello">
          Hello
