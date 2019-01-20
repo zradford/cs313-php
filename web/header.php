@@ -17,5 +17,5 @@ if(basename(__FILE__) == "home.php"){
    <li><a href=\"homework.php\" style=\"background-color:#C1C1C1\">Classwork</a></li></ul>";
 }
 
-
+ini_set(‘display_errors’, 1);
 ?>
