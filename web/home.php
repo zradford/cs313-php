@@ -10,7 +10,7 @@
    <?php include "header.php"?>
    <div class="homeWrapper">
       <div class="bigHello">
-         HI
+         Hello
       </div>
       <div class="introduction">
          My name is Zac Radford
