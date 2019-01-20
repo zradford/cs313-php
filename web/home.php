@@ -7,7 +7,7 @@
 <body>
    <?php include "header.php"?>
    <div class="homeWrapper">
-      <div class="bigHello">
+      <!-- <div class="bigHello">
          HI
       </div>
       <div class="introduction">
@@ -15,7 +15,21 @@
       </div>
       <div class="moreInfo">
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad libero officiis quis beatae harum rerum incidunt ipsa optio asperiores! Ea eos voluptatem ipsum officia. Nostrum fugiat veritatis a accusantium rem!
-      </div>
+      </div> -->
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
    </div>
 </body>
 </html>
