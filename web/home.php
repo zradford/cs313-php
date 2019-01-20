@@ -4,6 +4,7 @@
    <title>Zac Radford</title>
    <link rel="stylesheet" type="text/css" href="index.css">
    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
 </head>
 <body>
    <?php include "header.php"?>
