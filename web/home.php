@@ -3,33 +3,23 @@
 <head>
    <title>Zac Radford</title>
    <link rel="stylesheet" type="text/css" href="index.css">
+   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 </head>
 <body>
    <?php include "header.php"?>
    <div class="homeWrapper">
-      <!-- <div class="bigHello">
+      <div class="bigHello">
          HI
       </div>
       <div class="introduction">
-         My name is Zac Radford, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laudantium voluptatum distinctio natus reprehenderit iusto voluptate neque omnis. Suscipit illo iste consectetur porro aperiam architecto. Eum beatae reiciendis harum dignissimos?
+         My name is Zac Radford
       </div>
       <div class="moreInfo">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad libero officiis quis beatae harum rerum incidunt ipsa optio asperiores! Ea eos voluptatem ipsum officia. Nostrum fugiat veritatis a accusantium rem!
-      </div> -->
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
+         I make websites
+      </div>
+      <div class="footer">
+         
+      </div>
    </div>
 </body>
 </html>
