@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
    <title>Zac Radford</title>
@@ -8,7 +8,7 @@
    <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <?php require 'header.php' ?> 
+    <?php include 'header.php' ?> 
    <div class="homeWrapper">
       <div class="bigHello">
          Hello
