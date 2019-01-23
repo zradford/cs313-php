@@ -18,3 +18,6 @@ if(__FILE__ == "home.php"){
 }
 
 ?>
+<ul><li><a href="home.php">Home</a></li>
+   <li><a href="contact.php">Contact</a></li>
+   <li><a href="homework.php" style="background-color:#C1C1C1">Classwork</a></li></ul>
