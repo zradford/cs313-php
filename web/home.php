@@ -8,7 +8,7 @@
    <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <?php include 'header.php' ?> 
+   <?php include 'header.php' ?> 
    <div class="homeWrapper">
       <div class="bigHello">
          Hello
