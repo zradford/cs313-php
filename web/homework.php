@@ -11,6 +11,9 @@
 <?php include 'header.php' ?>
 <div class="homeworkWrapper">
    <div class="fjalla homeworkItem">
+      <a href="home.php">Home Page</a>
+   </div>
+   <div class="fjalla homeworkItem">
       <a href="store.php">Shopping Cart</a>
    </div>
 </div>
