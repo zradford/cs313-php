@@ -95,7 +95,10 @@ li a:hover {
 a {
    text-decoration: none;
 }
-
+.homeworkWrapper {
+   display: grid;
+   grid-template-columns:repeat(1fr,5);
+}
 .homeworkItem {
    height: 20%;
    width: 20%;
