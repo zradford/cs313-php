@@ -7,12 +7,12 @@
    grid-template-rows:repeat(5, 1fr);
 }
 
-:nth-child(odd) {
+/* :nth-child(odd) {
    background-color: lightblue;
 }
 :nth-child(even) {
    background-color: lightseagreen;
-}
+} */
 
 .bigHello {
    font-size: 200px;
