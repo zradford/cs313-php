@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 $page = basename(server(PHP_SELF));
 ?>
