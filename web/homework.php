@@ -10,7 +10,7 @@
 <body>
 <?php include 'header.php' ?>
 <div class="homeWrapper">
-   <div class="fjalla">
+   <div class="fjalla homeworkItem">
       <a href="store.php">Shopping Cart</a>
    </div>
 </div>
