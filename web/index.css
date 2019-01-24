@@ -16,7 +16,7 @@
 
 .bigHello {
    font-size: 200px;
-   font-family:'Rakkas', cursive, serif;
+   
    grid-column-start: 2;
    grid-column-end: 4;
    grid-row-start: 1;
@@ -26,7 +26,7 @@
 
 .introduction{
    font-size: 35px;
-   font-family:'Rakkas', cursive, serif;
+   
    /* background-color: aqua; */
 
    grid-column-start: 3;
@@ -34,10 +34,18 @@
    grid-row-start: 3;
    grid-row-end: 4;
 }
+.rakkas {
+   font-family:'Rakkas', cursive, serif;
+}
+
+.fjalla {
+   font-family: 'Fjalla One', sans-serif;
+}
+
 .moreInfo {
    /* background-color: lightcoral; */
    font-size: 25px;
-   font-family: 'Fjalla One', sans-serif;
+   
 
    grid-column-start: 3;
    grid-column-end: 5;

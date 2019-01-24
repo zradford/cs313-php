@@ -9,14 +9,14 @@
 </head>
 <body>
    <?php include 'header.php' ?> 
-   <div class="homeWrapper">
+   <div class="homeWrapper rakkas">
       <div class="bigHello">
          Hello
       </div>
-      <div class="introduction">
+      <div class="introduction rakkas">
          My name is Zac Radford
       </div>
-      <div class="moreInfo">
+      <div class="moreInfo fjalla">
          I make websites
       </div>
       <div class="footer">
