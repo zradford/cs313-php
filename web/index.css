@@ -65,7 +65,7 @@
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   overflow: hidden;
   background-color: #333;
 }
@@ -100,6 +100,7 @@ a {
    grid-template-columns:repeat(1fr,5);
 }
 .homeworkItem {
-   height: 20%;
-   width: 20%;
+   grid-row: auto;
+   grid-column: auto;
+   min-width: 20%;
 }
