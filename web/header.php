@@ -1,5 +1,5 @@
 <?php
-$page = basename(server(PHP_SELF));
+$page = basename($_SERVER[PHP_SELF]);
 ?>
 
 <ul>
