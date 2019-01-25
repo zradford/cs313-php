@@ -11,15 +11,15 @@
 <body>
    <?php include 'storeHeader.php'?>
    <div class="storeItemWrapper">
-      <div>item1</div>
-      <div>item2</div>
-      <div>item3</div>
-      <div>item4</div>
-      <div>item5</div>
-      <div>item6</div>
-      <div>item7</div>
-      <div>item8</div>
-      <div>item9</div>
+      <div class="storeItem">item1</div>
+      <div class="storeItem">item2</div>
+      <div class="storeItem">item3</div>
+      <div class="storeItem">item4</div>
+      <div class="storeItem">item5</div>
+      <div class="storeItem">item6</div>
+      <div class="storeItem">item7</div>
+      <div class="storeItem">item8</div>
+      <div class="storeItem">item9</div>
 
 
    </div>
