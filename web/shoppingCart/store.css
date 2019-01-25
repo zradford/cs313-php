@@ -1,0 +1,45 @@
+.storeItemWrapper {
+   display: flex;
+   flex-flow: row wrap;
+   -ms-flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: baseline;
+   align-content: stretch;
+}
+
+.storeItem {
+   min-width: 10%;
+   min-height: 20%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.right {
+   float: right;
+}
+
+li a {
+  display: block;
+  /* color: white; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  /* background-color: rgb(85, 153, 255); */
+}
+
+.active {
+   background-color: rgb(2, 15, 70);
+   color: white;
+}

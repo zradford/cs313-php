@@ -14,7 +14,7 @@
       <a href="home.php">Home Page</a>
    </div>
    <div class="fjalla homeworkItem">
-      <a href="store.php">Shopping Cart</a>
+      <a href="shoppingCart/store.php">Shopping Cart</a>
    </div>
 </div>
 </body>
