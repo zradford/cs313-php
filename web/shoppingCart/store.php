@@ -11,17 +11,7 @@
 <body>
    <?php include 'storeHeader.php'?>
    <div class="storeItemWrapper">
-      <div class="storeItem">item1</div>
-      <div class="storeItem">item2</div>
-      <div class="storeItem">item3</div>
-      <div class="storeItem">item4</div>
-      <div class="storeItem">item5</div>
-      <div class="storeItem">item6</div>
-      <div class="storeItem">item7</div>
-      <div class="storeItem">item8</div>
-      <div class="storeItem">item9</div>
-
-
+      <div class="storeItem card"><img src="/pictures/kirby.png" alt="kirby"></div>
    </div>
 </body>
 </html>
