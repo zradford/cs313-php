@@ -1,3 +1,6 @@
+<?php 
+   session_start();
+?>
 <?php include "storeHeader.php";?>
 <!DOCTYPE html>
 <html>
