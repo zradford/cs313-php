@@ -15,7 +15,7 @@
    <?php include 'storeHeader.php'?>
    <div class="storeItemWrapper">
       <div class="storeItem card">
-         <img src="/pictures/kirby_cute.png" alt="kirby">
+         <img src="/pictures/kirby_cute.png" alt="kirby" >
          <div> 
             <h1>Kirby</h1>
             <p>$1,000</p>

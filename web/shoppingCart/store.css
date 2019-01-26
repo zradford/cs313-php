@@ -1,7 +1,7 @@
 .storeItemWrapper {
    display: flex;
-   flex-flow: column wrap;
-   -ms-flex-flow: column wrap;
+   flex-flow: row wrap;
+   -ms-flex-flow: row wrap;
    justify-content: space-around;
    align-items: baseline;
    align-content: stretch;
@@ -61,5 +61,5 @@ li a:hover {
 
 img {
    border-radius: 5px 5px 0 0;
-   width: 75%;
+   width: 200px;
 }
