@@ -23,14 +23,7 @@
    // put the whole cart in the session
    $_SESSION["cart"] = $myCart;
 
-   function var_dump_pre($myCart) {
-      echo '<pre>';
-      var_dump($myCart);
-      echo '</pre>';
-      return null;
-   }
 
-   var_dump_pre($myCart);
 
    // give the cart back to the js
    $returnCart = json_encode($myCart);

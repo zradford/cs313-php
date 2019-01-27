@@ -12,3 +12,13 @@
    <link rel="stylesheet" type="text/css" media="screen" href="store.css" />
    <script src="store.js"></script>
 </head>
+<body>
+   <?php 
+      $cart = json_decode($_SESSION["cart"]);
+      foreach($cart as $item){
+         echo "<div class='card fjalla'><img src='/pictures/$item.png><h1>$item<h1></div>";
+      }
+   ?>
+
+   <a href="checkout.php"><button>Checkout</button></a>
+</body>
