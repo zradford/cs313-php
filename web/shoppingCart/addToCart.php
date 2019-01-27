@@ -3,7 +3,7 @@
    
    //initialize the cart class
    class Cart {
-      public $cartItems[] = "";
+      public $cartItems = [];
       public $numItems = 0;
    }
 
