@@ -18,7 +18,7 @@
 
    // add the item to the cart
    //$myCart->$cartItems[] = $_REQUEST["item"];
-   array_push( $myCart->$cartItems[] , $_REQUEST["item"] )
+   array_push( $myCart->$cartItems[] , $_REQUEST["item"] );
    $myCart->$numItems++;
 
    // put the whole cart in the session
