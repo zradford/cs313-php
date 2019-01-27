@@ -18,7 +18,7 @@
 
    // add the item to the cart
    $myCart->$cartItems[] = $_REQUEST["item"];
-   $myCart->$numItems += 1;
+   $myCart->$numItems++;
 
    // put the whole cart in the session
    $_SESSION["cart"] = $myCart;
