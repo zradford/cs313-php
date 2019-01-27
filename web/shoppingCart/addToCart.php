@@ -1,22 +1,30 @@
 <?php 
    session_start();
    
-   // initialize the cart
-   $_SESSION["numCartItems"] = 0;
-
-   //initialize the items in the cart
-   $cartItems[] = "";
-
-   // if they already have that item, do nothing
-   // else add it to the cart
-   if( in_array($_REQUEST["item"], $cartItems){
-      break;
-   } else {
-      $cartItems[] = $_REQUEST["item"];
-      $_SESSION["numCartItems"] += 1;
+   //initialize the cart class
+   class Cart {
+      public $cartItems[] = "";
+      public $numItems = 0;
    }
 
-   // return the number of items in the cart.
-   echo $_SESSION["numCartItems"];
 
+   if(isset($_SESSION["cart"])){
+      $myCart = new Cart;
+   } else {
+      $myCart = json_decode($_SESSION["cart"]);
+   }
+
+    
+
+   // add the item to the cart
+   $myCart->$cartItems[] = $_REQUEST["item"];
+   $myCart->$numItems += 1;
+
+   // put the whole cart in the session
+   $_SESSION["cart"] = $myCart;
+
+
+   // give the cart back to the js
+   $returnCart = json_encode($myCart);
+   echo $returnCart;
 ?>
