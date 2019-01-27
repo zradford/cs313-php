@@ -8,6 +8,6 @@ $page = basename($_SERVER[PHP_SELF]);
    <li><a class="<?php if($page == "") {echo "active";}?>" href="">   </a></li> -->
    <li><a class="right <?php if($page == "cart.php") {echo "active";}?>" href="cart.php">Cart</a></li>
 </ul>
-<div style="float: right;" id="cartNum">
+<div style="float: right; display:inline-block;" id="cartNum">
 0 <a href="cart.php"> <img src="" alt="cart"> </a>
 </div>
