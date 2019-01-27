@@ -9,7 +9,7 @@
    <title>Buy Now</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" type="text/css" media="screen" href="store.css" />
-   <script src="store.js"></script>
+   <script src="addToCart.js"></script>
 </head>
 <body>
    <?php include 'storeHeader.php'?>
