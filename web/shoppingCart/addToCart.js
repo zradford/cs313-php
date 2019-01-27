@@ -4,7 +4,6 @@ function addToCart(id) {
       if (this.readyState == 4 && this.status == 200) {
          var myCart = JSON.parse(this.responseText)
          document.getElementById("cartNum").innerHTML = myCart.numItems;
-         console.dir(myCart);
       }
    };
    xhttp.open("GET", "addToCart.php?item=" + id, true);
