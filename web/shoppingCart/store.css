@@ -8,8 +8,9 @@
 }
 
 .storeItem {
-   min-width: 10%;
-   min-height: 20%;
+  max-width: 40%;
+  padding: 20px;
+  margin: 10px;
 }
 
 ul {
@@ -23,7 +24,7 @@ li {
   float: left;
 }
 
-.right {
+li .right {
    float: right;
 }
 
