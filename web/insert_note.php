@@ -16,7 +16,7 @@ $query = 'INSERT INTO note (note_date, note_content, course_id) VALUES (:date, :
    $statement->execute();
    $course = $statement->fetch(PDO::FETCH_ASSOC);
 
-   $echo "$result";
+   echo "$result";
    flush();
    header("Location:notes.php?course_id=$course_id");
    die();
