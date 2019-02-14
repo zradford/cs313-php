@@ -2,7 +2,7 @@
    require_once('dbconnect.php');
    $db = get_db();
 
-   $course_id = $_GET["course_id"];
+   $course_id = htmlspecialchars($_GET["course_id"]);
 
    #get course from the db
    #:id is a place holder
@@ -31,5 +31,11 @@ $course_code = $course["code"];
 echo "<h1>Notes for $course_code - $course_name</h1>";
 
 ?>
+
+<form action="insert_note.php" method="post">
+    <input type="date" name="date"><br/>
+    <input type="hidden" name="course_id" value="<?php echo $course_id ?>">
+    <textarea name="content"></textarea><br />
+    <input type="submit" value="Insert Note">
 </body>
 </html>
