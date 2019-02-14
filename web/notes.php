@@ -57,8 +57,8 @@ echo "<h1>Notes for $course_code - $course_name</h1>";
 
 <?php 
    foreach($notes as $note) {
-   $date = $note['date'];
-   $content = $note['content'];
+   $date = $note['note_date'];
+   $content = $note['note_content'];
 
    echo "<p>Date: $date</p>";
    echo "<p>$content</p>";
