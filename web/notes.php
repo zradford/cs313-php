@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 <?php 
    require_once('dbconnect.php');
    $db = get_db();
@@ -6,14 +17,19 @@
 
    #get course from the db
    #:id is a place holder
-   $query = 'SELECT course_id, course_name, course_code FROM course WHERE course_id = :id';
-   $statement = $db->prepare($query);
    #bindValue will change :id to what you want and make sure it's the right thing, 
    #protect against sql injection
+   $query = 'SELECT course_id, course_name, course_code FROM course WHERE course_id=:id';
+   $statement = $db->prepare($query);
    $statement->bindValue(':id', $course_id, PDO::PARAM_INT);
    $statement->execute();
    $course = $statement->fetch(PDO::FETCH_ASSOC);
    
+   $query  = 'SELECT course_id, note_date, note_content FROM note WHERE course_id=:course_id';
+   $statement = $db->prepare($query);
+   $statement->bindValue(':course_id', $course_id, PDO::PARAM_INT);
+   $statement->execute();
+   $notes = $statement->fetchAll(PDO::FETCH_ASSOC);
    
 ?>
 <!DOCTYPE html>
@@ -27,20 +43,27 @@
 <body>
 <?php 
 $course_name = $course["course_name"];
-$course_code = $course["code"];
+$course_code = $course["course_code"];
 echo "<h1>Notes for $course_code - $course_name</h1>";
 
 ?>
 
 <form action="insert_note.php" method="post">
-    <input type="date" name="date"><br/>
+    <input type="date" name="date" /><br/>
     <input type="hidden" name="course_id" value="<?php echo $course_id ?>">
     <textarea name="content"></textarea><br />
     <input type="submit" value="Insert Note">
 </form>
 
 <?php 
+   foreach($notes as $note) {
+   $date = $note['date'];
+   $content = $note['content'];
 
+   echo "<p>Date: $date</p>";
+   echo "<p>$content</p>";
+   }
+      
 ?>
 </body>
 </html>
