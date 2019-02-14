@@ -1,25 +1,29 @@
 CREATE TABLE users (
-  user_id  SERIAL      PRIMARY KEY,
-  username VARCHAR(50) UNIQUE NOT NULL
+  user_id      SERIAL      PRIMARY KEY,
+  username     VARCHAR(50) UNIQUE NOT NULL,
+  creation_date TIMESTAMP   NOT NULL
 );
 
 CREATE TABLE topics (
-  topic_id    SERIAL PRIMARY KEY,
-  user_id     INT    REFERENCES users(user_id),
-  topic_title TEXT
+  topic_id      SERIAL    PRIMARY KEY,
+  user_id       INT       REFERENCES users(user_id),
+  creation_time TIMESTAMP NOT NULL,
+  topic_title   TEXT
 );
 
 CREATE TABLE posts (
-  post_id      SERIAL PRIMARY KEY,
-  user_id      INT    REFERENCES users(user_id),
-  topic_id     INT    REFERENCES topics(topic_id),
-  post_content TEXT
+  post_id       SERIAL    PRIMARY KEY,
+  user_id       INT       REFERENCES users(user_id),
+  topic_id      INT       REFERENCES topics(topic_id),
+  creation_time TIMESTAMP NOT NULL,
+  post_content  TEXT
 );
 
 
 CREATE TABLE replies (
-  reply_id      SERIAL PRIMARY KEY,
-  post_id       INT    REFERENCES posts(post_id),
+  reply_id      SERIAL    PRIMARY KEY,
+  post_id       INT       REFERENCES posts(post_id),
+  creation_time TIMESTAMP NOT NULL,
   reply_content TEXT
 );
 
