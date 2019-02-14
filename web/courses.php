@@ -2,7 +2,7 @@
    require_once('dbconnect.php');
    $db = get_db();
 
-   $query = 'SELECT course_id, course_name, course_code FROM courses';
+   $query = 'SELECT course_id, course_name, course_code FROM course';
    $statement = $db->query($query);
    $statement->execute();
    $courses = $statement->fetchALL(PDO::FETCH_ASSOC);
