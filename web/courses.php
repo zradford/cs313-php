@@ -1,3 +1,15 @@
+<?php 
+   require_once('dbconnect.php');
+   $db = get_db();
+
+   $query = 'SELECT course_id, course_name, course_code FROM courses';
+   $statement = $db->query($query);
+   $statement->execute();
+   $courses = $statement->fetchALL(PDO::FETCH_ASSOC);
+   
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +22,16 @@
    <h1>Notes App</h1>
    <h2>Courses</h2>
    <ul>
-      <li>csxx - text</li>
-      <li>csxx - text</li>
-      <li>csxx - text</li>
+      <?php 
+      
+      foreach($courses as $course) {
+         $id = $course['course_id'];
+         $name = $course['course_name'];
+         $code = $course['course_code'];
+         echo "<li>$code - $name</li>"
+      }
+
+      ?>
    </ul>
 </body>
 </html>
