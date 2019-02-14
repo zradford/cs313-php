@@ -9,7 +9,7 @@ require_once('dbconnect.php');
    $db = get_db();
 
 $query = 'INSERT INTO note (note_date, note_content, course_id) VALUES (:date, :content, :id)';
-   $statement = $db->query($query);
+   $statement = $db->prepare($query);
    $statement->bindValue(':date', $date, PDO::PARAM_STR);
    $statement->bindValue(':content', $content, PDO::PARAM_STR);
    $statement->bindValue(':id', $course_id, PDO::PARAM_INT);
