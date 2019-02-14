@@ -3,6 +3,17 @@
    $db = get_db();
 
    $course_id = $_GET["course_id"];
+
+   #get course from the db
+   #:id is a place holder
+   $query = 'SELECT course_id, course_name, course_code FROM course WHERE course_id = :id';
+   $statement = $db->query($query);
+   #bindValue will change :id to what you want and make sure it's the right thing, 
+   #protect against sql injection
+   $statement->bindValue(':id', $course_id, PDO::PARAM_INT);
+   $statement->execute();
+   $course = $statement->fetch(PDO::FETCH_ASSOC);
+   
    
 ?>
 <!DOCTYPE html>
@@ -15,7 +26,10 @@
 </head>
 <body>
 <?php 
-   echo "<h1>Notes for $course_id </h1>";
+$course_name = $course["course_name"];
+$course_code = $course["code"];
+echo "<h1>Notes for $course_code - $course_name</h1>";
+
 ?>
 </body>
 </html>
