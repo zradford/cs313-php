@@ -45,8 +45,9 @@
 $course_name = $course["course_name"];
 $course_code = $course["course_code"];
 echo "<h1>Notes for $course_code - $course_name</h1>";
-
 ?>
+
+<h2><a href="/courses.php">return to home</a></h2>
 
 <form action="insert_note.php" method="post">
     <input type="date" name="date" /><br/>
