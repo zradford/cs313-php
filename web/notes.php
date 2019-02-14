@@ -2,7 +2,7 @@
    require_once('dbconnect.php');
    $db = get_db();
 
-   $course_id = htmlspecialchars($_GET["course_id"]);
+   $course_id = htmlspecialchars($_GET['course_id']);
 
    #get course from the db
    #:id is a place holder
