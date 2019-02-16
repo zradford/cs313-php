@@ -16,6 +16,9 @@
    <div class="fjalla homeworkItem">
       <a href="shoppingCart/store.php">Shopping Cart</a>
    </div>
+   <div class="fjalla homeworkItem">
+      <a href="project1/home.php">Discussion Board</a>
+   </div>
 </div>
 </body>
 </html>
