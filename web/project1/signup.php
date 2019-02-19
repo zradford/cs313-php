@@ -7,6 +7,7 @@
 
       $username = htmlspecialchars($_POST['uname']);
       $password = htmlspecialchars($_POST['pword']);
+      $hash_pass = password_hash($password);
       
       //get user info
       $query = "SELECT user_id, username FROM users WHERE username = :uname";
@@ -17,7 +18,7 @@
       if($users['username'] == $username){
   
       } else {
-         $query = "INSERT INTO users (user_id, username, creation_date, hashed_pass) VALUES (DEFAULT, :uname, now(), password_hash($password), PASSWORD_DEFAULT)";
+         $query = "INSERT INTO users (user_id, username, creation_date, hashed_pass) VALUES (DEFAULT, :uname, now(), $hash_pass, PASSWORD_DEFAULT)";
          $statement = $db->prepare($query);
          $statement->execute(array(":uname"=>$username));
          $users = $statement->fetchALL(PDO::FETCH_ASSOC);
