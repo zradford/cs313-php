@@ -7,7 +7,7 @@
 
       $username = htmlspecialchars($_POST['uname']);
       $password = htmlspecialchars($_POST['pword']);
-      $hash_pass = password_hash($password);
+      $hash_pass = password_hash($password, PASSWORD_DEFAULT);
       
       //get user info
       $query = "SELECT user_id, username FROM users WHERE username = :uname";
