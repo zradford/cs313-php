@@ -2,7 +2,7 @@
    include('dbconnect.php');
    
 
-   if($SERVER['REQUEST_METHOD'] == 'POST') {
+   if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $db = get_db(); 
 
       $username = htmlspecialchars($_POST['uname']);
@@ -13,11 +13,11 @@
       $statement = $db->query($query);
       $statement->execute(array(":uname"=>$username));
       $users = $statement->fetchALL(PDO::FETCH_ASSOC);
-      
+
       echo "good morning";
       var_dump($users);
    }
-
+   
 
 
 ?>
