@@ -1,8 +1,11 @@
 CREATE TABLE users (
   user_id      SERIAL      PRIMARY KEY,
   username     VARCHAR(50) UNIQUE NOT NULL,
-  creation_date DATE   NOT NULL
+  creation_date DATE   NOT NULL,
+  hashed_pass VARCHAR(256) NOT NULL
 );
+
+ALTER TABLE users ADD COLUMN hashed_pass VARCHAR(256);
 
 CREATE TABLE topics (
   topic_id      SERIAL    PRIMARY KEY,
