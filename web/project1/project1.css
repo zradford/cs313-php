@@ -1,0 +1,62 @@
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+.rakkas {
+   font-family:'Rakkas', cursive, serif;
+}
+
+.fjalla {
+   font-family: 'Fjalla One', sans-serif;
+}
+
+.center {
+   text-align: center;
+}
+.wrapper {
+   display: grid;
+   grid-template-columns: [sidebar] 1fr [content] 3fr;
+}
+
+.sidebar {
+   content: sidebar;
+   background-color: #a8a7a7;
+   width: 100%;
+   padding: 10px 20px;
+}
+
+.content {
+   content: content;
+   background-color: #f8dede;
+   width: 100%;
+   padding: 10px 20px;
+}
+
+body {
+   background-color: #ffbbbb;
+}
+
+.nav {
+   display: block;
+   overflow: hidden;
+   background-color: #ffbbbb;
+   
+}
+
+.nav a{
+   float: left;
+   text-align: center;
+   text-decoration: none;
+   padding: 14px 16px;
+   color: black;
+   font-size: 20px;
+}
+
+.nav a:hover {
+   background-color: #c27e7e;
+}
+
+.nav-right {
+   float: right;
+}
