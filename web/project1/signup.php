@@ -13,7 +13,8 @@
       $statement = $db->query($query);
       $statement->execute(array(":uname"=>$username));
       $users = $statement->fetchALL(PDO::FETCH_ASSOC);
-
+      
+      echo "good morning";
       var_dump($users);
    }
 
