@@ -10,7 +10,7 @@
       
       //get user info
       $query = "SELECT user_id, username FROM users WHERE username = :uname";
-      $statement = $db->query($query);
+      $statement = $db->prepare($query);
       $statement->execute(array(":uname"=>$username));
       $users = $statement->fetchALL(PDO::FETCH_ASSOC);
 
