@@ -13,9 +13,16 @@
       $statement = $db->prepare($query);
       $statement->execute(array(":uname"=>$username));
       $users = $statement->fetchALL(PDO::FETCH_ASSOC);
+      
+      if($users['username'] == $username){
+  
+      } else {
+         $query = "INSERT INTO users (user_id, username, creation_date, hashed_pass) VALUES (DEFAULT, :uname, now(), password_hash($password), PASSWORD_DEFAULT)";
+         $statement = $db->prepare($query);
+         $statement->execute(array(":uname"=>$username));
+         $users = $statement->fetchALL(PDO::FETCH_ASSOC);
+      }
 
-      echo "good morning";
-      var_dump($users);
    }
    
 
