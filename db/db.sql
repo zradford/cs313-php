@@ -56,6 +56,13 @@ INSERT INTO topics VALUES (
   3,
   '2019-02-14',
   'BYUI BATHROOMS ARE DISGUSTING'
+),
+INSERT INTO topics VALUES 
+(
+  DEFAULT,
+  4,
+  '2019-02-18',
+  'Can we just wear ripped pants?'
 );
 
 
