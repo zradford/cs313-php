@@ -46,7 +46,14 @@
       </div>
       <div class="content fjalla">
          <h1 class="rakkas center">Topics of interest</h1>
-         this will be filled with 10-20 topics from other users
+         <?php 
+               foreach($topics as $topic) {
+                  $id = $topic['topic_id'];
+                  $name = $topic['topic_title'];
+                  $user = $topic['user_id'];
+                  echo "<li>$id - $name - $user</li>";
+      }
+            ?>
       </div>
    </div>
 </body>
