@@ -29,7 +29,7 @@
          <a href="user.php">Me</a>
       </div>
    
-   </div>
+   </div>echo "<li><a href='topic.php?title=$name'>$name</a></li>";
    <div class="wrapper">
       <div class="sidebar fjalla">
          <h1 class="rakkas center">My Topics</h1>

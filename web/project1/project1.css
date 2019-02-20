@@ -11,15 +11,10 @@ html, body {
    font-family: 'Fjalla One', sans-serif;
 }
 
-li {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-
 .center {
    text-align: center;
 }
+
 .wrapper {
    display: grid;
    grid-template-columns: [sidebar] 1fr [content] 3fr;
@@ -53,7 +48,6 @@ body {
 .nav a{
    float: left;
    text-align: center;
-   text-decoration: none;
    padding: 14px 16px;
    color: black;
    font-size: 20px;
@@ -65,4 +59,15 @@ body {
 
 .nav-right {
    float: right;
+}
+
+li {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+   color: black;
 }
