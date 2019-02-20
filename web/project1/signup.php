@@ -18,7 +18,7 @@
       if($users['username'] == $username){
   
       } else {
-         $query = "INSERT INTO users (user_id, username, creation_date, hashed_pass) VALUES (DEFAULT, :uname, now(), :hash_pass, PASSWORD_DEFAULT)";
+         $query = "INSERT INTO users (user_id, username, creation_date, hashed_pass) VALUES (DEFAULT, :uname, now(), :hash_pass)";
          $statement = $db->prepare($query);
          $statement->bindValue(':uname', $username, PDO::PARAM_INT);
          $statement->bindValue(':hash_pass', $hash_pass, PDO::PARAM_INT);
