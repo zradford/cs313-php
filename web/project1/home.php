@@ -39,7 +39,7 @@
                   $id = $topic['topic_id'];
                   $name = $topic['topic_title'];
                   $user = $topic['user_id'];
-                  echo "<li>$id - $name - $user</li>";
+                  echo "<li><a href='topic.php?title=$name'>$name</a></li>";
       }
             ?>
          </ul>
@@ -51,7 +51,7 @@
                   $id = $topic['topic_id'];
                   $name = $topic['topic_title'];
                   $user = $topic['user_id'];
-                  echo "<li>$name</li>";
+                  echo "<li><a href='topic.php?title=$name'>$name</a></li>";
       }
             ?>
       </div>
