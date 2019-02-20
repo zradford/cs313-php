@@ -26,7 +26,8 @@
       <a href="#">Home</a>
       
       <div class="nav-right">
-         <a href="user.php">Me</a>
+         <a href="signup.php">Login</a>
+         <a href="signup.php">Sign Up</a>
       </div>
    
    </div>
