@@ -16,7 +16,7 @@
       $users = $statement->fetchALL(PDO::FETCH_ASSOC);
       
       if($users['username'] == $username){
-          echo "Please choose another username"
+          echo "Please choose another username";
       } else {
          $query = "INSERT INTO users (user_id, username, creation_date, hashed_pass) VALUES (DEFAULT, :uname, now(), :hash_pass)";
          $statement = $db->prepare($query);
