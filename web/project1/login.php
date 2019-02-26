@@ -5,17 +5,23 @@ $db = get_db();
 
 
 if(! empty( $_POST )) {
+
    if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
-      $stmt = $db->prepare("SELECT * FROM users WHERE username = :uname");
-      $stmt->bind_param(':uname', $_POST['username']);
-      $stmt->execute();
-      $result = $stmt->get_result();
-    	$user = $result->fetch_object();
+      //security
+      $username = htmlspecialchars( $_POST['uname'] );
+      $password = htmlspecialchars( $_POST['pword'] );
+
+      //database call
+      $stmt = $db->prepare( "SELECT username, user_id FROM users WHERE username = :uname" );
+      $stmt->execute(array( ":uname"=>$username ));
+    	$user = $stmt->fetchALL( PDO::FETCH_ASSOC );
     		
     	// Verify user password and set $_SESSION
-    	if ( password_verify( $_POST['password'], $user->hashed_pass ) ) {
+    	if ( password_verify( $password, $user->hashed_pass ) ) {
     		$_SESSION['user_id'] = $user->user_id;
-    	}
+    	} else {
+          echo "incorrect password";
+       }
    }
 }
 ?>
