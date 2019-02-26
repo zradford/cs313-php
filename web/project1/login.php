@@ -8,8 +8,8 @@ if(! empty( $_POST )) {
 
    if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
       //security
-      $username = htmlspecialchars( $_POST['uname'] );
-      $password = htmlspecialchars( $_POST['pword'] );
+      $username = htmlspecialchars( $_POST['username'] );
+      $password = htmlspecialchars( $_POST['password'] );
 
       //database call
       $stmt = $db->prepare( "SELECT username, user_id FROM users WHERE username = :uname" );
