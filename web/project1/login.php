@@ -17,11 +17,10 @@ if(! empty( $_POST )) {
     	$user = $stmt->fetchALL( PDO::FETCH_ASSOC );
     		
     	// Verify user password and set $_SESSION
-    	if ( password_verify( $password, $user->hashed_pass ) ) {
+    	if ( password_verify( $password, $user->hashed_pass ) && $username === $user->username) {
     		$_SESSION['user_id'] = $user->user_id;
          header("Location: home.php");
     	} else {
-          var_dump($_SESSION, $user);
           echo "incorrect password";
        }
    }
