@@ -12,7 +12,7 @@ if(! empty( $_POST )) {
       $password = htmlspecialchars( $_POST['password'] );
 
       //database call
-      $stmt = $db->prepare( "SELECT username, user_id FROM users WHERE username = :uname" );
+      $stmt = $db->prepare( "SELECT username, user_id, hashed_pass FROM users WHERE username = :uname" );
       $stmt->execute(array( ":uname"=>$username ));
     	$user = $stmt->fetchALL( PDO::FETCH_ASSOC );
     		
