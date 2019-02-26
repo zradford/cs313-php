@@ -41,12 +41,14 @@
    <title>Login</title>
 </head>
 <body>
-   <div class="signup">
-      <form method="post" action="signup.php">
-         Username <input type="text"      name="uname" placeholder="Username"> <br/>
-         Password <input type="password"  name="pword" placeholder="********">
-         <button type="submit">Sign Up</button>
-      </form>
+   <div class="signupwrapper">
+      <div class="signup">
+         <form method="post" action="signup.php">
+            Username <input type="text"      name="uname" placeholder="Username"> <br/>
+            Password <input type="password"  name="pword" placeholder="********">
+            <button type="submit">Sign Up</button>
+         </form>
+      </div>
    </div>
 </body>
 </html>

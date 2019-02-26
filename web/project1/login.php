@@ -19,7 +19,7 @@ if(! empty( $_POST )) {
     	// Verify user password and set $_SESSION
     	if ( password_verify( $password, $user->hashed_pass ) ) {
     		$_SESSION['user_id'] = $user->user_id;
-          header("Location: home.php");
+         header("Location: home.php");
     	} else {
           var_dump($_SESSION, $user);
           echo "incorrect password";

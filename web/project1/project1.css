@@ -1,6 +1,21 @@
 html, body {
    margin: 0;
    padding: 0;
+} 
+
+.signup {
+   grid-column-start: 2;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   grid-row-end: 5;
+   background-color: gray;
+}
+
+.signupwrapper {
+   display: grid;
+   grid-template-columns: repeat(1fr, 6);
+   grid-template-rows: repeat(1fr, 6);
+   background-color: #ffbbbb;
 }
 
 .rakkas {
