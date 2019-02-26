@@ -7,7 +7,7 @@ $db = get_db();
 if(! empty( $_POST )) {
    if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
       $stmt = $db->prepare("SELECT * FROM users WHERE username = :uname");
-      $stmt->bind_param('uname', $_POST['username']);
+      $stmt->bind_param(':uname', $_POST['username']);
       $stmt->execute();
       $result = $stmt->get_result();
     	$user = $result->fetch_object();
