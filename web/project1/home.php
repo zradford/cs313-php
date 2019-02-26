@@ -1,4 +1,5 @@
 <?php 
+   session_start()
    include('dbconnect.php');
    $db = get_db();
 
@@ -26,8 +27,10 @@
       <a href="#">Home</a>
       
       <div class="nav-right">
-         <a href="signup.php">Login</a>
-         <a href="signup.php">Sign Up</a>
+         <?php
+         echo '<a href="login.php">Login</a>';
+         echo '<a href="signup.php">Sign Up</a>';
+         ?>
       </div>
    
    </div>
