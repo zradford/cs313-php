@@ -21,6 +21,7 @@ if(! empty( $_POST )) {
     		$_SESSION['user_id'] = $user->user_id;
           header("Location: home.php");
     	} else {
+          var_dump($_SESSION, $user);
           echo "incorrect password";
        }
    }
